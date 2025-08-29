@@ -1,0 +1,306 @@
+/*
+ * TechTools Web
+ *
+ * This stylesheet mirrors the look and feel of the Chrome extension
+ * while adapting to a full‑page responsive layout. Headers and
+ * headings use the SARIA font (all caps) and body text uses the
+ * NEUTRON font. Fallbacks are provided in case the fonts are not
+ * available.
+ */
+
+@font-face {
+  font-family: "SARIA";
+  src: url("fonts/SARIA.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NEUTRON";
+  src: url("fonts/NEUTRON.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --color-bg: #f6f8fc;
+  --color-header-bg: #002b44;
+  --color-header-text: #ffffff;
+  --color-primary: #005f9e;
+  --color-secondary: #ffffff;
+  --color-accent: #007acc;
+  --color-border: #e0e6ed;
+  --radius: 8px;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --font-heading: "SARIA", sans-serif;
+  --font-body: "NEUTRON", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  font-family: var(--font-body);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: var(--color-header-bg);
+  color: var(--color-header-text);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header .title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#searchInput {
+  margin-top: 0.5rem;
+  width: 100%;
+  max-width: 300px;
+  padding: 0.5rem;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+#searchInput:focus {
+  outline: 2px solid var(--color-accent);
+}
+
+.tile-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tile {
+  background-color: var(--color-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.tile:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tile-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 0.5rem;
+}
+
+.tile-name {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.tool-content {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.back-btn {
+  margin-bottom: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: var(--color-primary);
+}
+
+.back-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.tool-section {
+  margin-bottom: 1.5rem;
+}
+
+.tool-section h2 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin: 0 0 0.5rem;
+}
+
+.tool-section h3 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin: 1rem 0 0.5rem;
+}
+
+.tool-section label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+  color: #555;
+}
+
+.tool-section input[type="number"],
+.tool-section input[type="text"],
+.tool-section select,
+.tool-section textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  box-sizing: border-box;
+}
+
+.tool-section input:focus,
+.tool-section textarea:focus,
+.tool-section select:focus {
+  outline: 2px solid var(--color-accent);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  margin-right: 0.5rem;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  cursor: pointer;
+  background-color: var(--color-primary);
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+.btn.secondary {
+  background-color: #ffffff;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn:hover {
+  background-color: var(--color-accent);
+}
+
+.results-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+.results-list li {
+  background: var(--color-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  margin-bottom: 0.5rem;
+  padding: 0.6rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.results-list li:hover {
+  background-color: #f0f4fa;
+}
+
+.note-toolbar {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.note-toolbar button {
+  padding: 0.3rem 0.6rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-secondary);
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.note-toolbar button:hover {
+  background-color: #eef2f7;
+}
+
+.note-editor {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  min-height: 200px;
+  padding: 0.5rem;
+  overflow: auto;
+  font-size: 0.95rem;
+}
+
+.clearance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+
+.clearance-table th,
+.clearance-table td {
+  border: 1px solid var(--color-border);
+  padding: 0.5rem;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.clearance-table th {
+  background-color: #eef2f7;
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.pass {
+  color: green;
+  font-weight: bold;
+}
+
+.fail {
+  color: red;
+  font-weight: bold;
+}
+
+.footer {
+  margin-top: auto;
+  background-color: var(--color-header-bg);
+  color: var(--color-header-text);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
