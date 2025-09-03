@@ -5,21 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TechTools Web</title>
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5.0.5/dist/tesseract.min.js"></script>
 </head>
 <body>
   <div class="app-layout">
     <!-- Header -->
-    <header class="header">
+  <header class="header">
       <button id="hamburgerBtn" class="hamburger-btn" aria-label="Toggle navigation">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <h1 class="title">TechTools</h1>
+    <h1 class="title">TechTools</h1>
       <div class="header-search">
         <input type="search" id="searchInput" placeholder="Search tools… (Ctrl+K)" aria-label="Search tools" />
       </div>
-    </header>
+  </header>
 
     <!-- Sidebar Navigation -->
     <nav class="sidebar" id="sidebar">
@@ -50,8 +51,8 @@
             <h3>Clearances</h3>
             <div class="tool-nav-items">
               <button class="tool-nav-item" data-tool="clearance-tools" data-shortcut="3">
-                <img src="icons/gndcom.png" alt="Clearance tools icon" class="tool-icon" />
-                <span class="tool-name">Clearance Tools</span>
+                <img src="icons/gndcom.png" alt="Smart Clearance Analyzer icon" class="tool-icon" />
+                <span class="tool-name">Smart Clearance Analyzer</span>
                 <span class="tool-shortcut">3</span>
               </button>
             </div>
@@ -96,18 +97,30 @@
               <ul>
                 <li><kbd>Ctrl</kbd> + <kbd>K</kbd> - Focus search</li>
                 <li><kbd>1-5</kbd> - Switch tools directly</li>
+                <li><kbd>Ctrl</kbd> + <kbd>V</kbd> - Paste utility photo for measurement extraction</li>
                 <li>Recent tools appear at the top for quick access</li>
+                <li>Smart Clearance Analyzer adapts to your specific scenario</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-    </main>
+  </main>
   </div>
 
   <footer class="footer">
     <p>© 2025 TechTools. All rights reserved.</p>
   </footer>
-  <script src="scripts.js"></script>
+  
+  <!-- Load TechTools modules in correct order -->
+  <script src="scripts/core.js"></script>
+  <script src="scripts/smart-inputs.js"></script>
+  <script src="scripts/navigation.js"></script>
+  <script src="ocr-system.js"></script>
+  <script src="scripts/utility-ocr.js"></script>
+  <script src="scripts/calculators.js"></script>
+  <script src="scripts/unified-clearance-complete.js"></script>
+  <script src="scripts/productivity-tools.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
 </html>
