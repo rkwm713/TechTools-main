@@ -1,0 +1,65 @@
+Understood. I will review the provided NESC-2023 PDF to verify and fact-check the clearance guidelines you listed. I will compare the clearances in your list with the corresponding rules and tables in the document, highlighting any discrepancies or confirming accuracy. I will then prepare a clear, structured list for your web app. I’m starting the research now.
+
+
+Below is a cleaned‑up set of clearances for joint‑use communications facilities based solely on the 2023 NESC (Rule 232 – 239) and footnotes from the provided PDF.  Where the cheat‑sheet values differed from the NESC, the corrected value is shown.  As always, local utility standards, railroad agencies or bridge authorities may require greater clearances.
+
+### Vertical clearances over ground, roads and water (Rule 232, Table 232‑1)
+
+| Location / situation                                                                                                                          | Communications cable/messenger – minimum clearance          | Notes / supply comparisons                                                                                                                    |
+| --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Track rails of railroads (non‑electrified)**                                                                                                | **23.5 ft**                                                 | NESC lists 23.5 ft for communications; supply cables are 24.0 ft and open supply conductors are 25.3 ft.                                      |
+| **Roads, streets and other areas subject to truck traffic**                                                                                   | **15.5 ft**                                                 | Supply cables (0–750 V) require 16.5 ft and open supply conductors require 18.5 ft.                                                           |
+| **Alleys, driveways and parking areas not subject to truck traffic**                                                                          | **15.5 ft**                                                 | Same as above; supply cables need 16.5 ft.                                                                                                    |
+| **Other areas traversed by vehicles (grazing land, orchards, etc.)**                                                                          | **15.5 ft**                                                 | Supply cables 16.5 ft.                                                                                                                        |
+| **Spaces and ways subject to pedestrians or restricted traffic only**                                                                         | **9.5 ft**                                                  | NESC allows 9.5 ft for communications; supply cables require 12.5 ft.                                                                         |
+| **Water areas not suitable for sailboating**                                                                                                  | **14.0 ft**                                                 | Supply cables require 14.5 ft.                                                                                                                |
+| **Water areas suitable for sailboating**:  <br>• less than 20 acres <br>• 20 – 200 acres <br>• 200 – 2000 acres <br>• greater than 2000 acres | **17.5 ft** <br>**25.5 ft** <br>**31.5 ft** <br>**37.5 ft** | Supply values are 18.5 ft, 28.5 ft, 34.5 ft and 40.5 ft respectively.  Boat ramp areas require 5 ft more than the applicable category.        |
+| **Lines along highways where the conductor does not cross the roadway**                                                                       | **15.5 ft**                                                 | Same as road crossings; supply cables need 16.5 ft.                                                                                           |
+| **Roads where it is unlikely vehicles will pass under** (e.g., fenced alleys)                                                                 | **13.5 ft**                                                 | This reduced clearance is allowed only where a sagging or guyed line is made unlikely to be crossed by vehicles; supply cables require 14 ft. |
+
+**Service‑drop exceptions:**  Footnote 7 of Table 232‑1 permits service drops over residential driveways to be reduced: insulated communication service drops may clear only **11.5 ft**.  No ground clearance is required for anchor guys that do not cross roads, tracks or pathways.
+
+### Clearance between supply and communication conductors at the pole (Rule 235C, Table 235‑5)
+
+* **Typical separation:** Communication conductors in the communication space must be **40 in (1.0 m)** below supply conductors up to 8.7 kV.
+* **Reduction:** This separation may be reduced to **30 in (0.75 m)** when the supply neutral or fiber‑optic cable is effectively grounded and bonded.
+* **Higher voltages:** For supply above 8.7 kV, add **0.4 in for each kV** above 8.7 kV.
+* **Mid‑span exceptions:** In certain bonded neutral and fiber‑optic situations, mid‑span clearance may be **12 in**, but the pole separation must still be at least 30 in (per the associated footnotes in Table 235‑5).
+
+### Communication Worker Safety Zone (Rule 238E)
+
+* The CWSZ is a **vertical band \~40 in wide** created by the separation in Rule 235C.  No facilities (other than permitted neutrals or equipment) may be located within this zone so that linemen and communications workers have a safe working area.
+
+### Span wires and brackets supporting luminaires or signals (Rule 238C, Table 238‑2)
+
+* **Above communication support arms or messengers:** If not effectively grounded, maintain **40 in** vertical clearance.  If effectively grounded, clearance above a support arm may be **20 in** and above a messenger may be **4 in**.
+* **Below communication attachments:** Effectively grounded luminaires or signals may be mounted **4 in** below communications attachments; ungrounded installations are generally not permitted.
+* **Drip loops:** Footnote 1 allows the clearance above a communication cable to be reduced to **12 in** for drip loops; if the loop is covered with suitable insulation, **3 in** is acceptable.
+
+### Clearances adjacent to buildings (Rule 234 and Rule 234C3)
+
+* **Over or under roofs not readily accessible to persons:** **3 ft** vertical clearance is required.
+* **Over roofs, balconies, decks or similar structures readily accessible to persons:** **9.5 ft** vertical clearance for communications.
+* **Over roofs, ramps or decks accessible to vehicles but not to trucks:** **9.5 ft**.
+* **Over roofs, ramps, decks or loading docks accessible to truck traffic:** **15.5 ft** for communications.
+* **Horizontal from building surfaces:** Table 234‑1 lists **4.5 ft** horizontal clearance from walls, projections or windows and from balconies or other areas readily accessible to persons.
+* **Additional building rules (Rule 234C3d):** Communications conductors should be at least **3 ft** away in any direction from windows (unless the window does not open).  Horizontal clearance from porches, decks and fire escapes must be at least **5 ft**; at least **3 ft** below such structures; and communications service drops attached to buildings must clear **≥9.0 ft** above readily‑accessible roofs, decks or fire escapes.  At least **3 ft** is required above railings or parapets and below porches or decks.
+
+### Climbing and working space (Rules 236 & 237)
+
+* A climbing space must provide a clear **24‑in wide path** up the pole with protective covering in place.  This space should extend **40 in above and below** the highest and lowest conductor bounding the climbing space, and **60 in** when communication conductors are above supply conductors exceeding certain voltages.
+* **Horizontal width:** Table 236‑1 specifies the width between conductors bounding the climbing space on joint‑use structures: **24 in** for supply ≤ 750 V, **30 in** for 750 V–15 kV, **36 in** for 15–28 kV, **40 in** for 28–38 kV, and **46 in** for 38–50 kV.
+
+### Vertical and lateral runs (risers) through the other space (Rule 239)
+
+* **Passing through the communication space:** Supply cables or neutrals passing through the communication space must be placed in non‑metallic ducts or enclosures from **40 in above the highest communication facilities down to 6 ft below the lowest communication facility**.
+* **Passing through the supply space:** Communication riser cables passing through the supply space require similar non‑metallic coverings—extend **40 in above the highest supply conductor down to 6 ft below the lowest supply conductor**.
+* **Clearance from through‑bolts and metal hardware:** Provide **≥2 in** clearance around risers; this may be reduced to **1 in** when conductors or risers are effectively grounded.
+* **Open vertical or lateral conductors:** Table 239‑1 requires at least **3 in** from the surface of supports and **6 in** from span/guy/messenger wires for voltages up to 8.7 kV.  For higher voltages, additional clearances are added per kV.  Neutral conductors meeting Rule 230E1 may be attached directly to the support surface.
+
+### Miscellaneous provisions and “gotchas”
+
+* **Residential service‑drop reductions:** For service drops to residential buildings, insulated communication service drops may clear only **11.5 ft** over a residential driveway.  When attached to a building, communication service conductors must clear **≥9 ft** above accessible roofs or decks.  The supply service‑drop reductions listed in footnote 7 apply only to supply conductors meeting specific rules.
+* **Anchor guys:** The NESC does not require a ground clearance for anchor guys that do not cross roads, railroads, driveways or pathways.
+
+This fact‑checked list should provide a reliable basis for populating clearance calculators in your TechTools web application.

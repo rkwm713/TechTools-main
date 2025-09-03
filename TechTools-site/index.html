@@ -7,17 +7,107 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="header">
-    <h1 class="title">TechTools</h1>
-    <input type="search" id="searchInput" placeholder="Search tools…" aria-label="Search tools" />
-  </header>
-  <main>
-    <section id="tileContainer" class="tile-container"></section>
-    <section id="toolContent" class="tool-content hidden"></section>
-  </main>
+  <div class="app-layout">
+    <!-- Header -->
+    <header class="header">
+      <button id="hamburgerBtn" class="hamburger-btn" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <h1 class="title">TechTools</h1>
+      <div class="header-search">
+        <input type="search" id="searchInput" placeholder="Search tools… (Ctrl+K)" aria-label="Search tools" />
+      </div>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-content">
+        <div class="recent-tools" id="recentTools">
+          <h3>Recent</h3>
+          <div class="recent-tools-list" id="recentToolsList"></div>
+        </div>
+        
+        <div class="tool-categories">
+          <div class="category">
+            <h3>Calculators</h3>
+            <div class="tool-nav-items">
+              <button class="tool-nav-item" data-tool="fi-calculator" data-shortcut="1">
+                <img src="icons/fi.png" alt="Feet & Inches icon" class="tool-icon" />
+                <span class="tool-name">Feet & Inches</span>
+                <span class="tool-shortcut">1</span>
+              </button>
+              <button class="tool-nav-item" data-tool="sag-calculator" data-shortcut="2">
+                <img src="icons/sag.png" alt="Sag Calculator icon" class="tool-icon" />
+                <span class="tool-name">Sag Calculator</span>
+                <span class="tool-shortcut">2</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="category">
+            <h3>Clearances</h3>
+            <div class="tool-nav-items">
+              <button class="tool-nav-item" data-tool="clearance-tools" data-shortcut="3">
+                <img src="icons/gndcom.png" alt="Clearance tools icon" class="tool-icon" />
+                <span class="tool-name">Clearance Tools</span>
+                <span class="tool-shortcut">3</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="category">
+            <h3>Productivity</h3>
+            <div class="tool-nav-items">
+              <button class="tool-nav-item" data-tool="quic-note" data-shortcut="4">
+                <img src="icons/note.png" alt="QuiC Note icon" class="tool-icon" />
+                <span class="tool-name">QuiC Note</span>
+                <span class="tool-shortcut">4</span>
+              </button>
+              <button class="tool-nav-item" data-tool="qc-checklist" data-shortcut="5">
+                <img src="icons/checklist.png" alt="Design/QC icon" class="tool-icon" />
+                <span class="tool-name">Design/QC</span>
+                <span class="tool-shortcut">5</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sidebar Overlay for Mobile -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="tool-header" id="toolHeader">
+        <h1 id="toolTitle">Welcome to TechTools</h1>
+        <div class="tool-actions" id="toolActions"></div>
+      </div>
+      
+      <div class="tool-content" id="toolContent">
+        <div class="welcome-screen">
+          <div class="welcome-card">
+            <h2>Select a Tool to Get Started</h2>
+            <p>Choose from the sidebar or use keyboard shortcuts (1-5) to quickly access your tools.</p>
+            <div class="quick-tips">
+              <h3>Quick Tips:</h3>
+              <ul>
+                <li><kbd>Ctrl</kbd> + <kbd>K</kbd> - Focus search</li>
+                <li><kbd>1-5</kbd> - Switch tools directly</li>
+                <li>Recent tools appear at the top for quick access</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
   <footer class="footer">
     <p>© 2025 TechTools. All rights reserved.</p>
   </footer>
-  <script src="script.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
